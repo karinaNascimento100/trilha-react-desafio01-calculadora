@@ -2,28 +2,37 @@ import styled from 'styled-components';
 
 export const InputContainer = styled.div`
     width: 100%;
-    height: 75px;
-    background-color: #AAAAFF;
-
+    height: 88px;
+    background-color: #222831;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    padding: 4px 8px;
 
-    font-size: 24px;
-    font-family: 'Roboto';
-    
+    .expression {
+        height: 24px;
+        color: #9aa0a6;
+        font-size: 14px;
+        text-align: right;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
     input {
         width: 100%;
-        height: 75px;
-        background-color: #AAAAFF;
+        height: 56px;
+        background-color: transparent;
         border: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding: 0 10px;
-        font-size: 24px;
-        font-family: 'Roboto';
+        display: block;
+        padding: 0;
+        font-size: 28px;
+        font-family: 'Roboto', sans-serif;
         color: #FFFFFF;
+        text-align: right;
     }
 `
